@@ -13,6 +13,9 @@
 		D552B07D266FEA6E0029EDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D552B07B266FEA6E0029EDAF /* Main.storyboard */; };
 		D552B07F266FEA750029EDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D552B07E266FEA750029EDAF /* Assets.xcassets */; };
 		D552B082266FEA750029EDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D552B080266FEA750029EDAF /* LaunchScreen.storyboard */; };
+		D552B08B266FF0050029EDAF /* ImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552B089266FF0050029EDAF /* ImagesCell.swift */; };
+		D552B08C266FF0050029EDAF /* ImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D552B08A266FF0050029EDAF /* ImagesCell.xib */; };
+		D552B08E266FFE670029EDAF /* HeaderPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552B08D266FFE670029EDAF /* HeaderPart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D552B07E266FEA750029EDAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D552B081266FEA750029EDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D552B083266FEA750029EDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D552B089266FF0050029EDAF /* ImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCell.swift; sourceTree = "<group>"; };
+		D552B08A266FF0050029EDAF /* ImagesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesCell.xib; sourceTree = "<group>"; };
+		D552B08D266FFE670029EDAF /* HeaderPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				D552B07E266FEA750029EDAF /* Assets.xcassets */,
 				D552B080266FEA750029EDAF /* LaunchScreen.storyboard */,
 				D552B083266FEA750029EDAF /* Info.plist */,
+				D552B089266FF0050029EDAF /* ImagesCell.swift */,
+				D552B08A266FF0050029EDAF /* ImagesCell.xib */,
+				D552B08D266FFE670029EDAF /* HeaderPart.swift */,
 			);
 			path = AppleLabsDoubtSession;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D552B082266FEA750029EDAF /* LaunchScreen.storyboard in Resources */,
+				D552B08C266FF0050029EDAF /* ImagesCell.xib in Resources */,
 				D552B07F266FEA750029EDAF /* Assets.xcassets in Resources */,
 				D552B07D266FEA6E0029EDAF /* Main.storyboard in Resources */,
 			);
@@ -137,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D552B08E266FFE670029EDAF /* HeaderPart.swift in Sources */,
 				D552B07A266FEA6E0029EDAF /* ViewController.swift in Sources */,
+				D552B08B266FF0050029EDAF /* ImagesCell.swift in Sources */,
 				D552B076266FEA6E0029EDAF /* AppDelegate.swift in Sources */,
 				D552B078266FEA6E0029EDAF /* SceneDelegate.swift in Sources */,
 			);
