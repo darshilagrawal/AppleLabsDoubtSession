@@ -8,18 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-//    internal init(cookArray: [UIImage]? = nil, craigArray: [UIImage]? = nil, mainArray: [[UIImage]], testCollectionView: UICollectionView? = nil) {
-//        self.cookArray = cookArray
-//        self.craigArray = craigArray
-//        self.mainArray = mainArray
-//        self.testCollectionView = testCollectionView
-//        super.init(nibName: nil, bundle: nil)
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        fatalError("init(coder:) has not been implemented")
-//    }
+internal init(cookArray: [UIImage]? = nil, craigArray: [UIImage]? = nil, mainArray: [[UIImage]], testCollectionView: UICollectionView? = nil) {
+        self.cookArray = cookArray
+        self.craigArray = craigArray
+        self.mainArray = mainArray
+        self.testCollectionView = testCollectionView
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     
     var cookArray:[UIImage]?
     var craigArray:[UIImage]?
