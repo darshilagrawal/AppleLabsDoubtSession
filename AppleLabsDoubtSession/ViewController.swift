@@ -8,18 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-internal init(cookArray: [UIImage]? = nil, craigArray: [UIImage]? = nil, mainArray: [[UIImage]], testCollectionView: UICollectionView? = nil) {
-        self.cookArray = cookArray
-        self.craigArray = craigArray
-        self.mainArray = mainArray
-        self.testCollectionView = testCollectionView
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+//internal init(cookArray: [UIImage]? = nil, craigArray: [UIImage]? = nil, mainArray: [[UIImage]], testCollectionView: UICollectionView? = nil) {
+//        self.cookArray = cookArray
+//        self.craigArray = craigArray
+//        self.mainArray = mainArray
+//        self.testCollectionView = testCollectionView
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//
     
     
     var cookArray:[UIImage]?
@@ -90,9 +90,11 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIC
             fatalError("Could not load")
         }
         if(indexPath.section % 2 == 0){
-        categoryHeader.headerLabel.text = "Craig"
+        categoryHeader.headerLabel.text = "Craig federighi"
+            categoryHeader.backgroundColor = UIColor.cyan
         }else{
-        categoryHeader.headerLabel.text = "Cook"
+        categoryHeader.headerLabel.text = "Tim Cook"
+            categoryHeader.backgroundColor = UIColor.purple
         }
         return categoryHeader
     }
