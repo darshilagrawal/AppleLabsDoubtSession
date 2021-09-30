@@ -43,12 +43,10 @@ class ViewController: UIViewController {
         mainArray.append(cookArray!)
         mainArray.append(craigArray!)
         mainArray.append(cookArray!)
-        
     }
-
-
 }
-extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+
+extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return mainArray.count
@@ -77,15 +75,14 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource,UIC
         guard let categoryHeader = testCollectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath) as? HeaderPart else{
             fatalError("Could not load")
         }
-        if(indexPath.section % 2 == 0){
+        if(indexPath.section % 2 == 0) {
         categoryHeader.headerLabel.text = "Craig federighi"
             categoryHeader.backgroundColor = UIColor.cyan
-        }else{
+        } else {
         categoryHeader.headerLabel.text = "Tim Cook"
             categoryHeader.backgroundColor = UIColor.purple
         }
         return categoryHeader
     }
-    
 }
 
